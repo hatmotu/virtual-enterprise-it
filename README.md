@@ -16,44 +16,45 @@ It includes **Active Directory (AD), DNS, SQL Server, and Windows clients**, des
 
 ## 🏗️ Lab Architecture & AD Hierarchy
 
-|Internal Network 10.0.0.0/24 (Hyper-V NAT)     |
-|--------------|---------------|----------------|
+**Internal Network 10.0.0.0/24 (Hyper-V NAT)**
 | lab-dc01     | lab-sql01     | lab-clt01      |
+|--------------|---------------|----------------|
 | DC + DNS     | SQL Server    | Win11 Client   |
 | IP: 10.0.0.1 | IP: 10.0.0.10 | IP: 10.0.0.100 |
 
 
-lab.local (Domain)
+**lab.local (Domain)**
+
 \|  
-\+-- Employees  
+\+-- **Employees (OU)**
 \| \|  
-\| \+-- IT  
+\| \+-- **IT (OU)**
 \| \| \+-- a.weber (SQL\_Admins)  
 \| \| \+-- e.fischer  
 \| \|  
-\| \+-- Finance  
+\| \+-- **Finance (OU)**  
 \| \| \+-- b.schmidt (SQL\_Admins)  
 \| \| \+-- f.klein  
 \| \|  
-\| \+-- HR  
+\| \+-- **HR (OU)** 
 \| \| \+-- c.müller  
 \| \|  
-\| \+-- Sales  
+\| \+-- **Sales (OU)**  
 \| \+-- d.meier  
 \|  
-\+-- Groups  
+\+-- **Groups**
 \| \|  
-\| \+-- SQL\_Admins  
+\| \+-- **SQL\_Admins**
 \| \| \+-- a.weber  
 \| \| \+-- b.schmidt  
 \| \|  
-\| \+-- Helpdesk\_Team  
-\| \+-- VPN\_Users  
-\| \+-- Finance\_Group  
+\| \+-- **Helpdesk\_Team** 
+\| \+-- **VPN\_Users**  
+\| \+-- **Finance\_Group**
 \|  
-\+-- Clients  
-\+-- Servers  
-\+-- Service Accounts
+\+-- **Clients**
+\+-- **Servers**
+\+-- **Service Accounts**
 
 > 🔹 All VMs are connected to the **same internal NAT network** (10.0.0.0/24).  
 > 🔹 Users are organized into OUs and groups for permissions.  
