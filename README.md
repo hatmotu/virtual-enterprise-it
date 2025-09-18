@@ -1,3 +1,6 @@
+⚠️ Attention: This Document will soon be outdated as I will move to goals represented by skills tested in *AZ-800: Administering Windows Server Hybrid Core Infrastructure* exam. [Study progress for Exam AZ-800: Administering Windows Server Hybrid Core Infrastructure](https://github.com/hatmotu/AZ-800-Administering-Windows-Server-Hybrid-Core-Infrastructure---Study-Progress)
+
+
 # Demo Company Network Lab
 
 This repository documents a **virtual demo company network** built with Hyper-V to simulate a small corporate IT environment.  
